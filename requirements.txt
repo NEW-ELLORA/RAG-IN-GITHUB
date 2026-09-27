@@ -1,0 +1,29 @@
+# ==============================================================================
+# 🧠 GITHUB RAG DESKTOP APP - REQUIREMENTS & DEPENDENCIES
+# ==============================================================================
+# 
+# 🔑 REQUIRED APIs & KEYS (To be saved during the AES setup / .env file):
+#   1. GITHUB_TOKEN : (Optional but highly recommended) Your GitHub Personal 
+#                     Access Token. Prevents you from hitting GitHub's strict 
+#                     60 requests/hour unauthenticated rate limit.
+#   2. JINA_API_KEY : (Optional) Jina AI token for cloud embeddings. If left 
+#                     blank, the app automatically falls back to the local model.
+#
+# 🤖 MODELS USED:
+#   1. LLM Generator: Qwen3.5-4B.q4_k_m.gguf 
+#                     (Must be downloaded and placed in the project root folder)
+#   2. Embeddings   : sentence-transformers/all-MiniLM-L6-v2 
+#                     (Automatically downloaded by the app if Jina API is not used)
+#
+# ==============================================================================
+# 📦 PYTHON PACKAGES (Install via: pip install -r requirements.txt)
+# ==============================================================================
+
+customtkinter
+python-dotenv
+cryptography
+PyGithub
+chromadb
+requests
+sentence-transformers
+llama-cpp-python
